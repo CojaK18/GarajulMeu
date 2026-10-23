@@ -1,0 +1,138 @@
+
+/* Setari generale */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111c2e;
+    color: white;
+    margin: 0;
+}
+
+/* Antetul paginii */
+header {
+    background-color: #1e293b;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    color: #60a5fa;
+    margin: 0;
+}
+
+header p {
+    color: #cbd5e1;
+}
+
+/* Continutul principal */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 16px;
+}
+
+/* Sectiunile */
+section {
+    background-color: #25354b;
+    padding: 24px;
+    border-radius: 12px;
+    min-width: 0;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+/* Formularul */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #94a3b8;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Butonul */
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Lista de vehicule */
+#lista-vehicule {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-vehicule li {
+    background-color: #334155;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* Subsolul */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #cbd5e1;
+}
+
+/* Adaptare pentru telefon */
+@media (max-width: 700px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 16px;
+    }
+}
+
+#lista-vehicule li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.sterge-vehicul {
+    background-color: #dc2626;
+    margin-top: 0;
+}
+
+.sterge-vehicul:hover {
+    background-color: #b91c1c;
+}
+
+.sterge-vehicul:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
