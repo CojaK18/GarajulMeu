@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garajul Meu</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Garajul Meu</h1>
+        <p>Aplicația mea pentru gestionarea vehiculelor.</p>
+    </header>
+
+    <main>
+
+        
+<section>
+    <h2>Adaugă un vehicul</h2>
+
+    <form id="formular-vehicul">
+
+        <label for="tip">Tipul vehiculului:</label>
+        <select id="tip" name="tip" required>
+            <option value="">Alege tipul</option>
+            <option value="masina">Mașină</option>
+            <option value="motocicleta">Motocicletă</option>
+            <option value="bicicleta">Bicicletă</option>
+            <option value="atv">ATV</option>
+            <option value="altul">Altul</option>
+        </select>
+
+        <label for="marca">Marca:</label>
+        <input type="text" id="marca" name="marca" required>
+
+        <label for="model">Modelul:</label>
+        <input type="text" id="model" name="model" required>
+
+        <label for="an">Anul fabricației:</label>
+        <input type="number" id="an" name="an" min="1900" required>
+
+        <button type="submit">Adaugă în garaj</button>
+
+    </form>
+</section>
+
+
+        <section>
+            <h2>Vehiculele mele</h2>
+            <p id="status">Garajul este pregătit.</p>
+            <ul id="lista-vehicule"></ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Garajul Meu - Proiect Backend Development 2026</p>
+    </footer>
+
+</body>
+</html>
